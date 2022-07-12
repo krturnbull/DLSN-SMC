@@ -1,4 +1,4 @@
-## script to demonstrate smac sampler
+## script to demonstrate smc samplers
 include("../SMCcode/netgirf.jl") # call functions
 
 ## set model parameters

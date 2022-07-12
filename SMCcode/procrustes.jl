@@ -23,27 +23,3 @@ function procrustes( mat::Array{Float64,2}, matStr::Array{Float64,2})
 
     return ans'
 end
-
-# function procrustxHst!( strg::storage, refcoord::Array{Float64,3} )
-#     # function takes in storage object and transforms all x coordinates onto reference mat
-#     # this code is slow and dumb!
-#     # refcord is dim T x P x N
-
-#     print("\n")
-#     p = Progress(prms.T, 1, "Procrustes...!!", 25)
-    
-#     for t in 1:T
-        
-#         next!(p)
-        
-#         for m in 1:M
-#             ans = procrustes( strg.xHst[t,:,:,m], refcoord[t,:,:] )
-#             strg.xHst[t,:,:,m] = ans
-#         end
-        
-#     end
-
-#     print("\n")
-    
-#     strg
-# end
